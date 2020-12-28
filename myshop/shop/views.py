@@ -11,7 +11,7 @@ def product_list(request, category_slug=None):
     if category_slug:
         category = get_object_or_404(Category, slug=category_slug)
         products = products.filter(category=category)
-    template = 'shop/product/list.html'
+    template = 'shop/products/list.html'
     context = {
         'category': category,
         'categories': categories,
@@ -21,7 +21,7 @@ def product_list(request, category_slug=None):
 
 def product_detail(request, id, slug):
     product = get_object_or_404(Product, id=id, slug=slug, available=True)
-    template = 'shop/product/detail.html'
+    template = 'shop/products/detail.html'
     context = {
         'product': product,
     }
