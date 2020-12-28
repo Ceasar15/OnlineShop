@@ -19,11 +19,11 @@
         </thead>
         <tbody>
             {% for item in cart %}
-                {% wish product=item.product %}
+                {% with product=item.product %}
                     <tr>
                         <td>
                             <a href="{{ product.get_absolute_url }}">
-                                <img src="{% if product.image %}{{ product.image.url }}{% else }{% static 'img/no_image.png' %}{% endif %}">
+                                <img src="{% if product.image %}{{ product.image.url }}{% else %}{% static 'img/no_image.png' %}{% endif %}">
                             </a>
                         </td>
                         <td>
