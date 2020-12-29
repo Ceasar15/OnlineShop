@@ -1,10 +1,10 @@
 from django.contrib import admin
-from .models import Order, OrderTime
+from .models import Order, OrderItem
 
 # Register your models here.
 
 class OrderItemInline(admin.TabularInline):
-    model = OrderTime
+    model = OrderItem
     raw_id_fields = ['product']
 
 @admin.register(Order)
