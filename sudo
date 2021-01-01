@@ -1,0 +1,1 @@
+deb https://dl.bintray.com/rabbitmq/debian bionic main /etc/apt/sources.list.d/rabbitmq.list
