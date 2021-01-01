@@ -78,8 +78,12 @@ db.sqlite3
 db.sqlite3-journal
 
 
-# Scrapy stuff:
-.scrapy
+
+
+
+
+
+
 
 # Sphinx documentation
 docs/_build/
@@ -122,12 +126,7 @@ ENV/
 env.bak/
 venv.bak/
 
-# Spyder project settings
-.spyderproject
-.spyproject
 
-# Rope project settings
-.ropeproject
 
 # mkdocs documentation
 /site
